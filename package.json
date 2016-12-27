@@ -33,7 +33,8 @@
     "watch:css": "onchange \"src/scss\" -- npm run build:css",
     "watch:js": "onchange \"src/js\" -- npm run build:js",
     "watch:images": "onchange \"src/images\" -- npm run build:images",
-    "watch:all": "npm-run-all -p serve watch:css watch:js watch:images",
+    "--watch:all": "npm-run-all -p serve watch:css watch:js watch:images",
+    "watch:all": "parallelshell \"npm run serve\" \"npm run watch:css\" \"npm run watch:js\" \"npm run watch:images\"",
     "postinstall": "npm run build:all && npm run watch:all"
   },
   "devDependencies": {
