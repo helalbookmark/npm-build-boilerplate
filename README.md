@@ -1,5 +1,8 @@
 https://css-tricks.com/why-npm-scripts/
 
+use >>>  npm i -D parallelshell
+
+
 # npm-build-boilerplate
 
 A collection of packages that build a website using `npm scripts`.
